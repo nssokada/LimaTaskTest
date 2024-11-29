@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-LimaTaskMain-0.1";
 const contentToCache = [
-    "Build/limabuild_1124.loader.js",
-    "Build/limabuild_1124.framework.js",
-    "Build/limabuild_1124.data",
-    "Build/limabuild_1124.wasm",
+    "Build/LIMAFINAL_RESET.loader.js",
+    "Build/LIMAFINAL_RESET.framework.js",
+    "Build/LIMAFINAL_RESET.data",
+    "Build/LIMAFINAL_RESET.wasm",
     "TemplateData/style.css"
 
 ];

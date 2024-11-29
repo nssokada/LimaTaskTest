@@ -9,31 +9,31 @@
   <link rel="stylesheet" href="TemplateData/style.css">
   <link rel="manifest" href="manifest.webmanifest">
   <style>
-    html,
+    /* Set the body background color to black */
     body {
       margin: 0;
-      padding: 0;
-      overflow: hidden;
-      height: 100%;
       background-color: black;
-      /* Set background to black */
-    }
-
-    #unity-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      /* Ensure container background is also black */
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Unity container to maintain a 16:9 aspect ratio */
+    #unity-container {
+      position: relative;
+      width: 100vw;
+      height: 56.25vw;
+      /* 16:9 ratio (9/16 = 0.5625) */
+      max-width: 100%;
+      max-height: 100%;
+      overflow: hidden;
     }
 
     #unity-canvas {
       width: 100%;
-      height: auto;
-      max-height: 100%;
-      aspect-ratio: 16 / 9;
+      height: 100%;
     }
 
     #unity-loading-bar {
@@ -41,6 +41,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      text-align: center;
     }
   </style>
 </head>
@@ -88,11 +89,11 @@
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/limabuild_1124.loader.js";
+    var loaderUrl = buildUrl + "/LIMAFINAL_RESET.loader.js";
     var config = {
-      dataUrl: buildUrl + "/limabuild_1124.data",
-      frameworkUrl: buildUrl + "/limabuild_1124.framework.js",
-      codeUrl: buildUrl + "/limabuild_1124.wasm",
+      dataUrl: buildUrl + "/LIMAFINAL_RESET.data",
+      frameworkUrl: buildUrl + "/LIMAFINAL_RESET.framework.js",
+      codeUrl: buildUrl + "/LIMAFINAL_RESET.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "LimaTaskMain",
